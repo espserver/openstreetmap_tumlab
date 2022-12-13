@@ -5,7 +5,7 @@
 -   Docker-compose v2.12.1
 -   Need one map uncompressed in folder osm-data. To unziped a map, perform this procedure:
     -   Download the map you want at: [Geofabrik](http://download.geofabrik.de/).
-    -   Unzip the map with docker, using this command:
+    -   Unzip the map with docker, using this command, you just have to replace the path of the bind mount and the osm.pbf file:
         ```
         ~$docker run -v /path/osm_file/colombia-latest.osm.pbf:/data/region.osm.pbf -v /path/bind_mount/:/data/database/ overv/openstreetmap-tile-server import
         ```
