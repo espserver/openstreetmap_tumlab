@@ -1,5 +1,13 @@
 # OpenStreetmap_tumlab
 
+## Contents
+   * [Description](#Description)
+   * [Requirements](#Requirements)
+   * [Execution](#Execution)
+
+## Description:
+This repository contains the necessary information to run our own openstreetmap server in docker.
+
 ## Requirements:
 
 -   Docker-compose v2.12.1 or later
@@ -20,7 +28,7 @@
 -   Copy unziped map in folder osm-data
 -   Execute comand:
     ```
-       docker compose up -d
+       docker compose -p "openstreetmap_tumlab" up -d
     ```
 In the osm-data folder, the entire application database is stored.
 In the osm-tiles folder, all the rendering that users have done when zooming to the map is stored
