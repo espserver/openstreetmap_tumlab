@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  openstreetmap-web:
+    image: overv/openstreetmap-tile-server
+    container_name: openstreetmap-web
+    restart: always
+    ports:
+      - 80:8081
+    volumes: 
+      - ./osm-data:/data/database/
+      - ./osm-tiles:/data/tiles/
