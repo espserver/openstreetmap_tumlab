@@ -6,7 +6,8 @@ services:
     container_name: openstreetmap-web
     restart: always
     ports:
-      - 80:8081
+      - 8081:80
     volumes: 
-      - ./osm-data:/data/database/
+      - ./osm-data/_data/:/data/database/
       - ./osm-tiles:/data/tiles/
+    command: "run"
