@@ -23,12 +23,12 @@ This repository contains the necessary information to run our own openstreetmap 
     ```
     ~$chmod 777 osm-data/ osm-tiles/
     ```
-### Execution
+## Execution
 
 -   Copy unziped map in folder osm-data
 -   Execute comand:
     ```
-       docker compose -p "openstreetmap_tumlab" up -d
+    ~$docker compose -p "openstreetmap_tumlab" up -d
     ```
 In the osm-data folder, the entire application database is stored.
 In the osm-tiles folder, all the rendering that users have done when zooming to the map is stored
