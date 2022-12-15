@@ -26,9 +26,14 @@ This repository contains the necessary information to run our own openstreetmap 
 ## Execution
 
 -   Copy unziped map in folder osm-data
+-   The contents of the osm-data folder must be owned by the root user and have 755 permissions. Run the following commands located in the osm-data folder
+    ```
+    ~$sudo chown -R root _data/
+    ~$sudo chmod 755 _data/
+    ```
 -   Execute comand:
     ```
-    ~$docker compose -p "openstreetmap_tumlab" up -d
+    docker compose -p "openstreetmap_tumlab" up -d
     ```
 In the osm-data folder, the entire application database is stored.
 In the osm-tiles folder, all the rendering that users have done when zooming to the map is stored
